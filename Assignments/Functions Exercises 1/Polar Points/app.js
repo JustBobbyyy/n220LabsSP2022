@@ -13,12 +13,10 @@ function setup(){
 function draw(){
     translate(100,100);
     
-    res= polorPoint();
+    res= polorPoint(50);
     
     circle(res.x,res.y,10);
-    circle(res.x,res.y,10);
-    circle(res.x,res.y,10);
-    circle(res.x,res.y,10);
+   
     
 
     
