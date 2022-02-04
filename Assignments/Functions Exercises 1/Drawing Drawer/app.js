@@ -4,7 +4,7 @@
 //Drawing Drawer
 
 
-//create the object I want to make which are keys in this case
+//create the object I want to make which are oranges in this case
 // give the keys some properties
 
 let Orange= {
@@ -21,18 +21,20 @@ function setup(){
     //change the background to a random color
     background(150,133,157)
 }
-//now make sort of version of "keys" I guess
+//now make sort of version of "orange" I guess
 function draw(){
     drawOrange(mouseX,mouseY);
     
 }
+// make a function for the oranges basically function drawOrange
 function drawOrange(x,y){
+    //create a circle but with some of the values being mouseX and mouse Y just like in the instructions
     fill(Orange.color);
 
     circle(mouseX,mouseY, Orange.width, Orange.height);
 
     fill(Orange.color);
-    line(x,y,10,20);
+    line(10,10,20);
 }
 
 
