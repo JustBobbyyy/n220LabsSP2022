@@ -4,19 +4,28 @@
 //Polor Points 
 
 function setup(){
-    createCanvas(800,600);
-
+    createCanvas(600,300);
+    background(110,222,211);
 }
 
 
+
 function draw(){
-    background(110,222,211);
-    circle(400,300,200)
+    translate(100,100);
+    
+    res= polorPoint();
+    
+    circle(res.x,res.y,10);
+
+    
+
 }
 
 function polorPoint(r){
     x=  r * Math.sin(mouseX);
     y= r * Math.cos(mouseX);
+    return createVector(x,y); 
 };
 
+//Test the function
 
