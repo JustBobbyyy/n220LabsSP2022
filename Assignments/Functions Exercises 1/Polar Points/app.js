@@ -31,7 +31,7 @@ function draw(){
 //For this function I would want to put r in the parentheses and set it to a nice size number
 //Just like in the intructions set x and y to what it is suppose to equal to.
 //Also add the return part to this function from the intructions 
-function polorPoint(r=20){
+function polorPoint(r){
     x=  r * Math.sin(mouseX);
     y= r * Math.cos(mouseX);
     return createVector(x,y); 
