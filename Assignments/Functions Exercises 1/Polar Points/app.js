@@ -16,12 +16,16 @@ function draw(){
     res= polorPoint();
     
     circle(res.x,res.y,10);
+    circle(res.x,res.y,10);
+    circle(res.x,res.y,10);
+    circle(res.x,res.y,10);
+    
 
     
 
 }
 
-function polorPoint(r){
+function polorPoint(r=20){
     x=  r * Math.sin(mouseX);
     y= r * Math.cos(mouseX);
     return createVector(x,y); 

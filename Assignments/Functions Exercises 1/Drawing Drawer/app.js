@@ -7,12 +7,12 @@
 //create the object I want to make which are keys in this case
 // give the keys some properties
 
-let Keys = {
+let Orange= {
     height: 20,
     width: 20,
-    color: "D3D3D3",
+    color: "#fc7b03",
     weight: 5,
-    numKeys: 3,
+    calories: 45,
 };
 
 function setup(){
@@ -23,16 +23,16 @@ function setup(){
 }
 //now make sort of version of "keys" I guess
 function draw(){
-    drawKey(mouseX,mouseY);
+    drawOrange(mouseX,mouseY);
     
 }
-function drawKey(x,y){
-    fill(Keys.color);
+function drawOrange(x,y){
+    fill(Orange.color);
 
-    circle(mouseX,mouseY, Keys.width, Keys.height);
+    circle(mouseX,mouseY, Orange.width, Orange.height);
 
-    fill(Keys.color);
-    line(mouseX,mouseY,10,20);
+    fill(Orange.color);
+    line(x,y,10,20);
 }
 
 
