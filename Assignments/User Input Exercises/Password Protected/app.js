@@ -12,11 +12,10 @@ let div = document.getElementById("check");
 //make a function that includes the username and password inputs 
 //and then bring out the words "Success" and "Wrong Information"
 //to see if they put the right or wrong infomation in
-function login() {
-    if(username.value == "username" && password.value == "password"){
-         div.innerHTML= "Success!"
-    }else{
-        div.innerHTML= "Wrong Information"
+function login(){
+    if(username.value == "Username" && password.value == "Password"){
+        div.innerHTML = "Success!";
+    } else {
+        div.innerHTML = "Wrong information";
     }
-
-};
+}
