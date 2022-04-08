@@ -11,11 +11,12 @@ let dvRemove= document.getElementById("Remove");
     
 //create a function that removes the "#" whenever presses the button 
 //Find a way so that it removes "#" everytime the user puts it in the input
+// use "/whatever I want to replace/" so that it replaces every instance of the word or symbol
 function By(){
    let userName = txtClean.value;
     let story = `${userName}`;
     //console.log(story)
-    return story.replace(/#/g," ");
+    return story.replace(/#/g,"");
 
   
     
