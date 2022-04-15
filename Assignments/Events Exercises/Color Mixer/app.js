@@ -12,8 +12,11 @@ let r = 100;
 let g = 110;
 let b = 120;
 
-//
+
 showResults.style.backgroundColor = "rgb(" + r + ","+ g + "," + b +")"
+
+//create three functions that basically repsond to the actions in the HTML
+//also that will not go over 255 becuase that is the highest rgb can go
 
 function colorRed(event){
     let response = event.target.getAttribute("data-value");
